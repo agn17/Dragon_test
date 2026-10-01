@@ -1,5 +1,5 @@
 ==============================================================
-DRAGON BATTLE - Junior Unity Developer Technical Assessment
+DRAGON FIGHT - Junior Unity Developer Technical Assessment
 Dexhigh Services Pvt Ltd
 ==============================================================
 
