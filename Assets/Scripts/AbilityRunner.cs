@@ -44,6 +44,10 @@ public class AbilityRunner : MonoBehaviour
         readyAt = new float[abilities.Length];
         anim = GetComponentInChildren<Animator>();
         audioSrc = GetComponent<AudioSource>();
+        if (!audioSrc) audioSrc = gameObject.AddComponent<AudioSource>();
+        audioSrc.playOnAwake = false;
+        audioSrc.spatialBlend = 0f;   // 2D, so the high camera doesn't fade it out
+        audioSrc.volume = 1f;
         cc = GetComponent<CharacterController>();
         myHealth = GetComponent<Health>();
     }
@@ -64,6 +68,7 @@ public class AbilityRunner : MonoBehaviour
     {
         IsBusy = true;
         AbilityData a = abilities[i];
+       //debug.Log($"{name} used {a.abilityName}, sfx = {(a.sfx ? a.sfx.name : "NONE")}");
         anim.SetTrigger(a.animTrigger);
         if (a.sfx && audioSrc) audioSrc.PlayOneShot(a.sfx);
 

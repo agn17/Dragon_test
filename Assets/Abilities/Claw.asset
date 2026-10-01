@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Claw
   m_EditorClassIdentifier: 
   abilityName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4674068fa9b8ce840be40dd342c3f092, type: 3}
   damage: 20
   cooldown: 2
   range: 4
   animTrigger: Tail
-  vfxPrefab: {fileID: 0}
-  sfx: {fileID: 0}
+  vfxPrefab: {fileID: 8108809822259560093, guid: 3546775d854c13543adda6284d92b0bd, type: 3}
+  sfx: {fileID: 8300000, guid: ee92a256a3eab9c4bb3e70463ce28075, type: 3}

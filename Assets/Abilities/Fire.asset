@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Fire
   m_EditorClassIdentifier: 
   abilityName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 774fc3fcae60b7048a92030086427068, type: 3}
   damage: 15
   cooldown: 4
   range: 4
   animTrigger: Fire
-  vfxPrefab: {fileID: 0}
-  sfx: {fileID: 0}
+  vfxPrefab: {fileID: 4995316329743560969, guid: 56b7674a6a3e6814db7339530d14a82c, type: 3}
+  sfx: {fileID: 8300000, guid: f03c5c4a13d710941ba63fa9aff2c63d, type: 3}
