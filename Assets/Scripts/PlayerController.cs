@@ -12,15 +12,22 @@ public class PlayerController : MonoBehaviour
 
     CharacterController cc;
     Animator anim;
+    Health health;
 
     void Awake()
     {
         cc = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        health = GetComponent<Health>();
     }
 
     void Update()
     {
+        if (GameManager.IsOver || health.IsDead)
+        {
+            anim.SetFloat("Speed", 0f);
+            return;
+        }
         if (abilities != null && abilities.IsBusy)
         {
             anim.SetFloat("Speed", 0f);
